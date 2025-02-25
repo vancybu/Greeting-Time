@@ -31,12 +31,14 @@ h1 {
     font-size: 3rem;
     padding: 10px;
     border-radius: 0 30px;
+    font-weight: 600;
 }
 
-p {
+h2 {
     color: #f1f1f1;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: normal;
 }
 
 img {
@@ -52,6 +54,12 @@ button {
     color: #000;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #f1f1f1;
+    padding: 14px 0;   
 }
 
 @keyframes rotate {

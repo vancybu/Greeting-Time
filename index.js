@@ -10,6 +10,9 @@ let getMinutes = currentDate.getMinutes();
 // 4. Get the current seconds
 let getSeconds = currentDate.getSeconds();
 
+// 5. Get the current year
+let getFullYear = currentDate.getFullYear();
+
 // 5. Create a variable to store the time
 let greeting = getHours + ":" + getMinutes + ":" + getSeconds;
 
@@ -39,5 +42,17 @@ const heading = document.querySelector("h1");
 
 // 11. Change the innerHTML of the h1 element to display the greeting
 heading.innerHTML = greeting;
+
+// 12. Select the p element with the class of copyright
+const copyright = document.querySelector(".copyright");
+
+// 13. Create a new span element
+const year = document.createElement("span");
+
+// 14. Set the innerHTML of the span element to the current year
+year.innerHTML = getFullYear;
+
+// 15. Append the span element to the p element
+copyright.appendChild(year);
 
 
