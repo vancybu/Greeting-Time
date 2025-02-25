@@ -12,15 +12,15 @@ body {
 }
 
 div {
-    border: 6px solid #111b;
+    border: 0.4px solid #111b;
     padding: 40px;
     border-radius: 20px;
     background-color: #f2f2;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    /* animation-name: rotate;
+    animation-name: rotate;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternateu; */
+    animation-direction: alternateu;
     margin: 30px;
     text-align: center;
 }
@@ -67,9 +67,9 @@ button {
     padding: 14px 0;   
 }
 
-/* @keyframes rotate {
+@keyframes rotate {
     0% {border-color: #fbfbbb;}
     50% {border-color: #22fbb2;}
     100% {border-color: #111b22;}
-} */
+}
 
