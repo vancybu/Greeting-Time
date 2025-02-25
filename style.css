@@ -4,26 +4,29 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
     display: grid;
     place-items: center;
     place-content: center;
     height: 100vh;
-    background: #000;
+    background: #111b01;
 }
 
 div {
-    border: 3px solid;
+    border: 6px solid #111b;
     padding: 40px;
     border-radius: 20px;
     background-color: #f2f2;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    animation-name: rotate;
+    /* animation-name: rotate;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternateu;
+    animation-direction: alternateu; */
     margin: 30px;
     text-align: center;
+}
+
+div:hover {
+    animation-play-state: paused;
 }
 
 h1 {
@@ -32,6 +35,7 @@ h1 {
     padding: 10px;
     border-radius: 0 30px;
     font-weight: 600;
+    font-family: "open sans",serif;
 }
 
 h2 {
@@ -39,6 +43,7 @@ h2 {
     padding: 10px;
     font-size: 1.8rem;
     font-weight: normal;
+    font-family: "open sans",serif;
 }
 
 img {
@@ -62,9 +67,9 @@ button {
     padding: 14px 0;   
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     0% {border-color: #fbfbbb;}
     50% {border-color: #22fbb2;}
     100% {border-color: #111b22;}
-}
+} */
 

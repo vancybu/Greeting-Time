@@ -28,6 +28,12 @@ if (getHours < 12) {
     greeting = "Good Evening";
 }
 
+// 10. Select the h1 element
+const heading = document.querySelector("h1");
+
+// 11. Change the innerHTML of the h1 element to display the greeting
+heading.innerHTML = greeting;
+
 // 7. Create a variable to store the image URL
 const img = "https://picsum.photos/200";
 
@@ -36,12 +42,6 @@ const image = document.querySelector("img");
 
 // 9. Change the src attribute of the image element
 image.src = img;
-
-// 10. Select the h1 element
-const heading = document.querySelector("h1");
-
-// 11. Change the innerHTML of the h1 element to display the greeting
-heading.innerHTML = greeting;
 
 // 12. Select the p element with the class of copyright
 const copyright = document.querySelector(".copyright");
