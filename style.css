@@ -1,94 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    display: grid;
-    place-items: center;
-    place-content: center;
-    height: 100vh;
-    background: #111b01;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+  background: #111b01;
 }
 
 div {
-    border: 0.4px solid #111b;
-    padding: 40px;
-    border-radius: 20px;
-    background-color: #f2f2;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternateu;
-    margin: 30px;
-    text-align: center;
+  border: 0.4px solid #111b;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #f2f2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternateu;
+  margin: 30px;
+  text-align: center;
 }
 
 div:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 h1 {
-    color: red;
-    font-size: 3rem;
-    padding: 10px;
-    border-radius: 0 30px;
-    font-weight: 600;
-    font-family: "open sans",serif;
+  color: red;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 0 30px;
+  font-weight: 600;
+  font-family: "open sans", serif;
 }
 
 h2 {
-    color: #f1f1f1;
-    padding: 10px;
-    font-size: 1.8rem;
-    font-weight: normal;
-    font-family: "open sans",serif;
+  color: #f1f1f1;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-family: "open sans", serif;
 }
 
 img {
-    border-radius: 30px;
-    padding: 15px 0;
+  border-radius: 30px;
+  padding: 15px 0;
 }
 
 button {
-    padding: 6px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    color: #000;
-    font-size: 1.5rem;
-    cursor: pointer;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .copyright {
-    font-size: 1rem;
-    color: #f1f1f1;
-    padding: 14px 0;   
+  font-size: 1rem;
+  color: #f1f1f1;
+  padding: 14px 0;
 }
 
 @keyframes rotate {
-    0% {border-color: #fbfbbb;}
-    50% {border-color: #22fbb2;}
-    100% {border-color: #111b22;}
+  0% {
+    border-color: #fbfbbb;
+  }
+  50% {
+    border-color: #22fbb2;
+  }
+  100% {
+    border-color: #111b22;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    div {
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    img {
-        padding: 10px 0;
-    }
-    button {
-        padding: 4px 15px;
-        font-size: 1.2rem;
-    }
-
-};
+  div {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    padding: 10px 0;
+  }
+  button {
+    padding: 4px 15px;
+    font-size: 1.2rem;
+  }
+}
