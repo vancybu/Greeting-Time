@@ -23,14 +23,17 @@ console.log(time);
 let greeting;
 let color;
 let quote;
+
 if (getHours < 12) {
   greeting = "Good Morning";
   color = "#22fb33cd ";
   quote = "The early bird catches the worm";
+
 } else if (getHours < 18) {
   greeting = "Good Afternoon";
-  color = "#111b22";
+  color = "#1f22fb";
   quote = "It's always darkest before the dawn";
+  
 } else {
   greeting = "Good Evening";
   color = "#fb1122";
