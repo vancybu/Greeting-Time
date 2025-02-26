@@ -21,12 +21,16 @@ console.log(time);
 
 // 7. Determine the appropriate greeting based on the current hour
 let greeting;
+let color;
 if (getHours < 12) {
     greeting = "Good Morning";
+    color = "#22fb33";
 } else if (getHours < 18) {
     greeting = "Good Afternoon";
+    color = "#111b22";
 } else {
     greeting = "Good Evening";
+    color = "#fb1122";
 }
 
 // 8. Select the h1 element
@@ -35,25 +39,28 @@ const heading = document.querySelector("h1");
 // 9. Change the innerHTML of the h1 element to display the greeting
 heading.innerHTML = greeting;
 
-// 10. Create a variable to store the image URL
+// 10. Change the color of the h1 element based on the greeting
+heading.style.color = color;
+
+// 11. Create a variable to store the image URL
 const img = "https://picsum.photos/200";
 
-// 11. Select the image element
+// 12. Select the image element
 const image = document.querySelector("img");
 
-// 12. Change the src attribute of the image element
+// 13. Change the src attribute of the image element
 image.src = img;
 
-// 13. Select the p element with the class of copyright
+// 14. Select the p element with the class of copyright
 const copyright = document.querySelector(".copyright");
 
-// 14. Create a new span element
+// 15. Create a new span element
 const year = document.createElement("span");
 
-// 15. Set the innerHTML of the span element to the current year
+// 16. Set the innerHTML of the span element to the current year
 year.innerHTML = getFullYear;
 
-// 16. Append the span element to the p element
+// 17. Append the span element to the p element
 copyright.appendChild(year);
 
 
