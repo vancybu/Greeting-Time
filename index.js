@@ -81,15 +81,19 @@ function updateImages() {
   if (getSeconds < 10) {
     slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/cubes-2492010_1280.jpg";
   } else if (getSeconds < 20) {
-    slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/keyboard-5017973_1280.jpg";
+    slide =
+      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/keyboard-5017973_1280.jpg";
   } else if (getSeconds < 30) {
-    slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulb-4314993_1280.jpg";
+    slide =
+      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulb-4314993_1280.jpg";
   } else if (getSeconds < 40) {
-    slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulbs-1603766_1280.jpg";
+    slide =
+      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulbs-1603766_1280.jpg";
   } else if (getSeconds < 50) {
     slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/smoke-4988507_1280.jpg";
   } else {
-    slide = "/FRONTEND DEVELOPMENT/JAVASCRIPT+TIME/Image Folder/pexels-danielabsi-952670.jpg";
+    slide =
+      "/FRONTEND DEVELOPMENT/JAVASCRIPT+TIME/Image Folder/pexels-danielabsi-952670.jpg";
   }
 
   // Select the image element

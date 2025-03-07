@@ -17,10 +17,12 @@ div {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   margin: 30px;
   text-align: center;
+  width: 400px;
+  height: 540px;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 10px;
   border-radius: 0 30px;
   font-weight: 450;
@@ -29,15 +31,15 @@ h1 {
 
 .quote {
   padding: 10px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: normal;
   font-family: "open sans", serif;
 }
 
 img {
- width: 300px;
- height: 300px;
- padding: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 button {
@@ -48,6 +50,7 @@ button {
   color: #f3f3f3;
   font-size: 1.5rem;
   cursor: pointer;
+  margin: 10px 0 0;
 }
 
 .copyright {
@@ -55,22 +58,24 @@ button {
   padding: 14px 0;
 }
 
-
 @media screen and (max-width: 768px) {
   div {
     padding: 20px;
+    width: 300px;
+    height: 450px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 5px;
   }
   .quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 6px;
   }
   img {
-    padding: 10px 0;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
   }
   button {
     padding: 4px 15px;
