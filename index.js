@@ -74,32 +74,41 @@ console.log(updateTime());
 function updateImages() {
   const currentDate = new Date();
   const getSeconds = currentDate.getSeconds();
-  console.log(getSeconds);
+
+  const arrImages = [
+    "Image Folder/1.jpg",
+    "Image Folder/2.jpg",
+    "Image Folder/3.jpg",
+    "Image Folder/4.jpg",
+    "Image Folder/5.jpg",
+    "Image Folder/6.jpg",
+    "Image Folder/7.jpg",
+  ];
 
   let slide;
 
   if (getSeconds < 10) {
-    slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/cubes-2492010_1280.jpg";
-  } else if (getSeconds < 20) {
-    slide =
-      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/keyboard-5017973_1280.jpg";
-  } else if (getSeconds < 30) {
-    slide =
-      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulb-4314993_1280.jpg";
-  } else if (getSeconds < 40) {
-    slide =
-      "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/light-bulbs-1603766_1280.jpg";
-  } else if (getSeconds < 50) {
-    slide = "/FRONTEND DEVELOPMENT/SLIDES/Image Folder/smoke-4988507_1280.jpg";
-  } else {
-    slide =
-      "/FRONTEND DEVELOPMENT/JAVASCRIPT+TIME/Image Folder/pexels-danielabsi-952670.jpg";
-  }
+    slide = arrImages[5];
 
+  } else if (getSeconds < 20) {
+    slide = arrImages[0];
+
+  } else if (getSeconds < 30) {
+    slide = arrImages[1];
+
+  } else if (getSeconds < 40) {
+    slide = arrImages[2];
+
+  } else if (getSeconds < 50) {
+    slide = arrImages[3];
+
+  } else {
+    slide = arrImages[4];
+  }
   // Select the image element
   const image = document.querySelector("img");
   image.src = slide;
 }
 
 // Call the updateTime function every second
-setInterval(updateImages, 1000);
+setInterval(updateImages,3000);
