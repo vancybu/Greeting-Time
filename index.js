@@ -6,20 +6,8 @@ function updateTime() {
   // Get the current hour
   const getHours = currentDate.getHours();
 
-  // Get the current minutes
-  const getMinutes = currentDate.getMinutes().toString().padStart(2, "0");
-
-  // Get the current seconds
-  const getSeconds = currentDate.getSeconds().toString().padStart(2, "0");
-
   // Get the current year
   const getFullYear = currentDate.getFullYear();
-
-  // Create a variable to store the formatted time
-  let time = `${getHours}:${getMinutes}:${getSeconds}`;
-
-  // Log the time to the console
-  console.log(time);
 
   // Determine the appropriate greeting based on the current hour
   let greeting;
@@ -82,33 +70,12 @@ function updateImages() {
     "Image Folder/4.jpg",
     "Image Folder/5.jpg",
     "Image Folder/6.jpg",
-    "Image Folder/7.jpg",
   ];
 
-  let slide;
+  const number = Math.floor(Math.random() * arrImages.length);
 
-  if (getSeconds < 10) {
-    slide = arrImages[5];
-
-  } else if (getSeconds < 20) {
-    slide = arrImages[0];
-
-  } else if (getSeconds < 30) {
-    slide = arrImages[1];
-
-  } else if (getSeconds < 40) {
-    slide = arrImages[2];
-
-  } else if (getSeconds < 50) {
-    slide = arrImages[3];
-
-  } else {
-    slide = arrImages[4];
-  }
-  // Select the image element
-  const image = document.querySelector("img");
-  image.src = slide;
+  document.querySelector("img").src = arrImages[number];
 }
 
 // Call the updateTime function every second
-setInterval(updateImages,3000);
+setInterval(updateImages, 3000);
