@@ -16,15 +16,15 @@ function updateTime() {
 
   if (getHours < 12) {
     greeting = "Good Morning";
-    color = "#22fb33cd";
+    color = "#C14600";
     quote = "The early bird catches the worm";
   } else if (getHours < 18) {
     greeting = "Good Afternoon";
-    color = "#1f22fb";
+    color = "#F2E2B1";
     quote = "It's always darkest before the dawn";
   } else {
     greeting = "Good Evening";
-    color = "#f00";
+    color = "#690B22";
     quote = "The night is darkest just before the dawn";
   }
 
@@ -79,3 +79,5 @@ function updateImages() {
 
 // Call the updateTime function every second
 setInterval(updateImages, 3000);
+
+

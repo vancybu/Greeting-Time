@@ -8,12 +8,12 @@ body {
   place-items: center;
   place-content: center;
   height: 100vh;
-  background: #f4f4f4;
+  background: #f8ffff;
 }
 
 div {
   padding: 40px;
-  background-color: #fff1bb;
+  background-color: #255f38;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
   margin: 30px;
   text-align: center;
@@ -23,7 +23,7 @@ div {
 
 h1 {
   font-size: 2.2rem;
-  padding: 6px 0 ;
+  padding: 6px 0;
   border-radius: 0 30px;
   font-weight: 450;
   font-family: "open sans", serif;
@@ -34,6 +34,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: normal;
   font-family: "open sans", serif;
+  color: #fce7c8;
 }
 
 img {
@@ -59,7 +60,8 @@ a {
 
 .copyright {
   font-size: 1rem;
-  padding: 14px 0 15px;
+  padding: 6px 0 15px;
+  color: #f0a04b;
 }
 
 @media screen and (max-width: 768px) {
@@ -69,7 +71,7 @@ a {
     height: 480px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 6px 0;
   }
   .quote {
@@ -86,5 +88,9 @@ a {
     padding: 4px 15px;
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .copyright {
+    padding: 15px 0;
   }
 }
